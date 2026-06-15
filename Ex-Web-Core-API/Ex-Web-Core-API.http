@@ -1,0 +1,36 @@
+@Ex_Web_Core_API_HostAddress = http://localhost:5282
+
+### Thêm sản phẩm hợp lệ
+POST {{Ex_Web_Core_API_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Bàn phím cơ",
+  "price": 1250000
+}
+
+### Lấy sản phẩm theo ID
+GET {{Ex_Web_Core_API_HostAddress}}/api/products/1
+Accept: application/json
+
+### Tên không hợp lệ
+POST {{Ex_Web_Core_API_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "AB",
+  "price": 100000
+}
+
+### Giá không hợp lệ
+POST {{Ex_Web_Core_API_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Chuột không dây",
+  "price": 0
+}
+
+### ID không hợp lệ
+GET {{Ex_Web_Core_API_HostAddress}}/api/products/0
+Accept: application/json
