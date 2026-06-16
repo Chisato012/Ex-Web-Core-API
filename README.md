@@ -15,6 +15,7 @@ dotnet run --project Ex-Web-Core-API
 
 - HTTP: `http://localhost:5282`
 - HTTPS: `https://localhost:7230`
+- Đổi port tại: `.\Properties\launchSettings.json`
 
 API không có giao diện tại đường dẫn `/`. Front-end cần gọi đúng các endpoint
 được mô tả bên dưới.
